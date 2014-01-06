@@ -498,7 +498,7 @@ void loop()
       Serial.read();
     
     if (target != 's' && target != 'l') {
-      Serial.println(F("invalid target (expected \"s\" or \"l"));
+      Serial.println(F("invalid target (expected \"s\" or \"l\")"));
     }
     else {
       int position = Serial.parseInt();
