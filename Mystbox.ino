@@ -506,8 +506,8 @@ void loop()
         Serial.read();
 
       switch (target) {
-        case 's':  if (position > 7) position = -1;  break;
-        case 'l':  if (position > 8) position = -1;  break;
+        case 's':  if (position >= 7) position = -1;  break;
+        case 'l':  if (position >= 8) position = -1;  break;
       }
 
       int microsServoNew = Serial.parseInt();
