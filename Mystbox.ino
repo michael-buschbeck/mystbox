@@ -528,7 +528,6 @@ void loop()
         }
 
         Serial.println(F(" micros"));
-        Serial.println();
 
         switch (target) {
           case 's':  readScanner   (position);  break;
@@ -540,7 +539,7 @@ void loop()
         Serial.print(F("cannot set position "));
         Serial.print(position);
         Serial.print(F(" to invalid "));
-        Serial.println(microsServoNew);
+        Serial.print(microsServoNew);
         Serial.println(F(" micros"));
       }
       else {
